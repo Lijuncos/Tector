@@ -1,0 +1,22 @@
+.e404 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $PETROLEO;
+    color: $GREY;
+    min-height: calc(100vh - 145px);
+    @media screen and (min-width: 768px) {
+        min-height: calc(100vh - 200px);
+    }
+    i {
+        color: rgb(200, 50, 50);
+        font-size: 120px;
+    }
+    a {
+        color: $GREY;
+        &:hover {
+            color: $DUST_BLUE;
+        }
+    }
+}

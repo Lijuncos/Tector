@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'HomepageBaukasten-Book';
+    src: url('HomepageBaukasten-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Cocogoose-Classic-Medium-trial';
+    src: url('Cocogoose-Classic-Medium-trial.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'KaushanScript-Regular';
+    src: url('KaushanScript-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'iCiel';
+    src: url('iCiel_Ultra.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'iCiel';
+    src: url('iCiel_Medium.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'iCiel';
+    src: url('iCiel_Thin.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}

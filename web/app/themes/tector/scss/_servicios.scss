@@ -1,0 +1,104 @@
+.servicios {
+    .banner {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        .banner-text {
+            h1 {
+                padding: 0px ;
+                margin: 0;
+                font-family: "KaushanScript-Regular";
+                color: $GREY;
+                font-size: 60px;
+                letter-spacing: 1px;
+                border-radius: 30px;
+                background-color: rgba(0, 0, 0, 0.3);
+                box-shadow: 0 0 30px 30px rgba(0, 0, 0, 0.3);
+            }
+            @media screen and (min-width: 768px) {
+                position: absolute;
+                bottom: 20%;
+                left: 10%;
+                h1 {
+                    font-size: 80px;
+                    background-color: rgba(0, 0, 0, 0.2);
+                    box-shadow: 0 0 30px 30px rgba(0, 0, 0, 0.2);
+                }
+            }
+        }
+        .banner-servicio {
+            position: absolute;
+            top: 96%;
+            font-size: 18px;
+            text-align: center;
+            border-radius: 30px;
+            line-height: 1.5;
+            background-color: $PETROLEO;
+            padding: 30px 30px;
+            color: $GREY;
+            font-family: 'HomepageBaukasten-Book';
+            @media screen and (min-width: 992px) {
+                bottom: auto;
+                top: 50%;
+                transform: translateY(-50%);
+                font-size: 22px;
+                right: 5%;
+                letter-spacing: 1px;
+                width: 400px;
+                box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
+            }
+            @media screen and (min-width:1400px) {
+                right: 10%;
+            }
+        }
+    }
+    .banner::before {
+        background: url(img/servicios-mobile.jpg) no-repeat center center;
+
+        @media only screen and (min-width: 768px) {
+            background: url(img/servicios.jpg) no-repeat center -20%;
+        }
+    }
+    .servicio {
+        padding-top: 90px;
+        margin-top: 220px;
+        padding-bottom: 30px;
+        background-color: $GREY;
+        @media screen and (min-width: 992px) {
+            margin-top: 30px;
+        }
+        .container {
+            @media screen and (min-width: 768px) {
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                column-gap: 30px;
+                .ultimo-item {
+                    grid-column: span 2;
+                    width: 50%;
+                    margin: 0 auto;
+                }
+            }
+            .item {
+                font-family: 'HomepageBaukasten-Book';
+                margin-top: 60px;
+                text-align: center;
+                font-weight: 200;
+                color: $PETROLEO;
+                line-height: 1.5;
+                letter-spacing: 1px;
+                figure {
+                    margin: 0 auto;
+                    width: 180px;
+                    height: 180px;
+                }
+                h3 {
+                    font-family: 'iCiel';
+                    font-weight: 400;
+                    font-size: 20px;
+                }
+            }
+            
+        }
+        
+    }
+}
