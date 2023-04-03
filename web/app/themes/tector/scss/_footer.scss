@@ -2,23 +2,115 @@ footer {
     bottom: 0;
     width: 100%;
     position: absolute;
-    background-color: $GREY;
-    color: $BLACK-I;
+    background-color: $CELESTE;
+    
     .footer-content {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
         font-size: 14px;
+        padding: 20px 0;
+        text-align: center;
         @media only screen and (min-width: 768px) {
             font-size: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
         img {
-            width: 120px;
+            width: 180px;
             padding: 20px 0;
             @media only screen and (min-width: 768px){
-                width: 180px;
                 padding: 10px 0;
             }
         }
     }
+
+    .footer-text {
+        color: white;
+        font-size: 23px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        a {
+            color: white;
+            padding: 10px;
+            
+        }
+        span {
+            display: none;
+        }
+        @media screen and (min-width:768px) {
+            flex-direction: row;
+            span {
+                display: block;
+            }
+        }
+    }
+
+    .footer-icons {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 20px 0;
+        .fa-brands {
+            background-color: white;
+            color: $CELESTE;
+            font-size: 30px;
+            padding: 5px;
+            border-radius: 50px;
+            margin-right: 5px;
+            width: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &.fa-facebook {
+                padding: 0;
+                color: white;
+                background-color: unset;
+                font-size: 40px;
+            }
+        }
+    }
+
+    .footer-desing {
+        width: 100%;
+        height: 100px;
+        background-image: url(img/footer-diseño.png);
+        position: relative;
+
+        .footer-chat {
+            display: flex;
+            color: white;
+            background-color: lighten(black, 12%);
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            padding: 10px;
+            border-radius: 15px 15px 0 0;
+            @media screen and (min-width:768px) {
+                font-size: 30px;
+                width: 400px;
+                height: 120px;
+                right: 150px;
+                padding: 40px 0 0 40px;
+            }
+            &-text {
+                margin: -5px 0 0 0;
+                line-height: 1;
+                padding: 0 15px;
+                @media screen and (max-width: 767px) {
+                    display: none;
+                }
+            }
+            
+            .fa-message{
+                font-size: 60px;
+                color: white;
+                z-index: 1000;
+            }
+
+        }
+
+        
+    }
+    
+
 }

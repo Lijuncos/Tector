@@ -2,60 +2,44 @@
 @import "scss/header";
 @import "scss/footer";
 @import "scss/home";
-@import "scss/contactanos";
-@import "scss/formaciones";
-@import "scss/servicios";
-@import "scss/conocenos";
 @import "scss/404";
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;900&display=swap');
+
 html {
     box-sizing: border-box;
   }
   *, *:before, *:after {
     box-sizing: inherit;
   }
-.loader {
-    z-index: 10000;
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background-color: #FFF;
-    transition: all 0.5s ease-in-out;
-    img {
-        width: 200px;
-    }
-}
 body {
     margin: 0;
-    margin-top: 65px;
-    padding-bottom: 80px;
+    margin-top: 49px;
+    padding-bottom: 460px;
     min-height: calc(100vh - 65px);
     position: relative;
+    // min-width: 440px;
 }
 @media screen and (min-width: 768px) {
     body {
-        margin-top: 120px;
+        margin-top: 160px;
         min-height: calc(100vh - 120px);
+        padding-bottom: 220px;
     }
 }
 h1,h2,h3,h4,p {
-    font-family: "Iciel";
+    font-family: 'Nunito Sans', sans-serif;
     font-weight: 400;
 }
 a {
     text-decoration: none;
-    font-family: "Iciel";
+    font-family: 'Nunito Sans', sans-serif;
     font-weight: 400;
 }
 img {
     max-width: 100%;
 }
 input,textarea {
-    font-family: "Iciel";
+    font-family: 'Nunito Sans', sans-serif;
     color: $DUST_BLUE;
 }
 button, input[type="submit"], input[type="reset"] {
@@ -110,5 +94,9 @@ button, input[type="submit"], input[type="reset"] {
     }
     @media screen and (min-width: 1200px) {
         width: 100%;
+    }
+    @media screen and (min-width: 1600px) {
+        width: 100%;
+        max-width: 1600px;
     }
 }

@@ -1,101 +1,57 @@
 .site-header {
-    padding: 10px 0;
+    display: flex;
     position: fixed;
     z-index: 1000;
     top: 0;
     width: 100%;
-    background-color: $GREY;
-    transition: all 0.2s ease-in-out;
+    background-color: $CELESTE;
     @media screen and (min-width: 768px) {
-        padding: 25px 0;
+        padding: 45px 5%;
+    }
+    .header-logo {
+        display: flex;
+        align-items: center;
+        width: 30%;
+        img {
+            width: 100%;
+        }
+        @media screen and (max-width:767px) {
+            margin-left: 10px;
+            width: unset;
+        }
+
     }
     .navbar {
-        display: flex; 
-        justify-content: space-between;
-        margin: 0 auto;
-        width: 90%;
-        .menu-principal-container {
-            width: 100%;
-            .menu {
-                height: 45px;
-                list-style: none;
-                padding-left: 0;
-                margin: 0;
-                @media screen and (min-width: 768px) {
-                    height: 70px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                }
-                .menu-item {
-                    display: none;
-                    @media screen and (min-width: 768px) {
-                        display: inline-block;
-                    }
-                    a {
-                        padding: 15px 0;
-                        color: $PETROLEO;
-                        @media screen and (min-width: 768px) {
-                            font-size: 18px;
-                        }
-                        @media screen and (min-width: 992px) {
-                            font-size: 20px;
-                        }
-                        img {
-                            width: 120px;
-                            height: auto;
-                            transition: all 0.2s ease-in-out;
-                        }
-                        
-                        @media screen and (min-width: 768px) {
-                            img {
-                                width: 200px;
-                            }
-                        }
-                        &::after {
-                            content: "";
-                            display: block;
-                            background-color: $PETROLEO;
-                            height: 2px;
-                            width: 0;
-                            transition: all 0.3s ease-in-out;  
-                        }
-                        &:hover {
-                            &::after {
-                                width: 100%;
-                            }
-                            
-                        }
-                    }
-                    
-                }
-                .has-image {
-                    display: inline-block;
-                    a {
-                        &::after {
-                            display: none !important;
-                        }
-                    }
-                }
-                .current-menu-item {
-                    a::after {
-                        content: "";
-                        display: block;
-                        background-color: $PETROLEO;
-                        height: 2px;
-                        width: 100%;
-                    }
-                }
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 70%;
+        .menu {
+            @media screen and (max-width: 767px) {
+                display: none;
             }
+            display: flex;
+            list-style: none;
+            &-item {
+                font-size: 25px;
+                font-weight: 300;
+                a {
+                    color: white;
+                }
+                margin-left: 20px;
+            }
+        
         }
         .menu-button {
+            margin-right: 15px;
+            padding: 10px 0;
             span {
                 transition: all 0.3s ease-in-out;
                 display: block;
-                background-color: $PETROLEO;
+                background-color: white;
                 height: 3px;
                 margin: 5px 0;
-                width: 30px;
+                width: 25px;
             }
     
             @media screen and (min-width: 768px) {
@@ -106,7 +62,6 @@
             span {
                 &:nth-child(1) {
                     transform: translateY(8px) rotate(45deg);
-                    
                 }
                 &:nth-child(2) {
                     opacity: 0;
@@ -123,40 +78,31 @@
         }
         transition: all 0.3s ease-in-out;
         position: fixed;
-        top: 64px;
+        top: 48px;
         left: -520px;
+        z-index: 1000;
+        background-color: lighten($CELESTE, 4%);
+        padding: 0 35px 0 0;
         opacity: 0;
         font-size: 22px;
-        background-color: $GREY;
+        border-bottom-right-radius: 25px;
         -webkit-box-shadow: 500px 501px 0px 500px rgba(0, 0, 0, 0.3);
         -moz-box-shadow: 500px 501px 0px 500px rgba(0,0,0,0.3);
         box-shadow: 500px 501px 0px 500px rgba(0,0,0,0.3);
-        .menu-principal-container {
-            .menu {
-                list-style: none;
-                padding-left: 0;
-                margin: 0;
-                height: calc(100vh - 150px);
-                .menu-item {
-                    padding: 15px 100px 15px 0;
-                    margin: 0 20px;
-                    border-bottom: solid 1px $PETROLEO;
-                    a {
-                        color: $PETROLEO;
-                    }
-                    &:last-child {
-                        border-bottom: none;
-                    }
-                }
-                .has-image {
-                    display: none;
-                }
-            }
+
+        li {
+            list-style: none;
+            margin-top: 10px;
         }
+        a {
+            
+            color: white;
+        }
+
     }
 }
 .scroll-header {
-    padding: 0;  
+    padding: 0 5%;  
     .navbar {
         .menu-principal-container {
             .menu {

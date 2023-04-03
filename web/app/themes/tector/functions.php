@@ -27,9 +27,8 @@ add_action( 'widgets_init', 'tector_sidebar' );*/
 function tector_enqueue () {
 
     //ESTILOS
-    wp_enqueue_style( 'estilos', get_template_directory_uri () . '/estilos.css' );
+    wp_enqueue_style( 'estilos', get_template_directory_uri () . '/styles.css' );
     wp_enqueue_style( 'fuentes', get_template_directory_uri () . '/fonts/fuentes.css' );
-    wp_enqueue_style( 'font-awesome-free', '//use.fontawesome.com/releases/v5.6.3/css/all.css' );
     
     //JAVASCRIPT
     wp_enqueue_script ('funciones', get_template_directory_uri (). '/js/functions.js');

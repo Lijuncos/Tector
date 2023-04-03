@@ -12,7 +12,6 @@ docReady(function() {
     parrafosVacios.forEach(element => {
         element.remove();
     });
-
     //inicializacion
     const menuButton = document.querySelector(".menu-button");
     //const gridHome = document.querySelector(".grid-home");
@@ -45,15 +44,16 @@ docReady(function() {
     }
 
     //HEADER =========================================================================
-    function wrapHeader() {
-        let header = document.querySelector("header");
-        let logo = header.querySelector(".has-image a img");
-        if (document.documentElement.scrollTop >= 70) {
-            header.classList.add("scroll-header");
-        } else {
-            header.classList.remove("scroll-header");
+        function wrapHeader() {
+            let header = document.querySelector("header");
+            let logo = header.querySelector(".has-image a img");
+            if (document.documentElement.scrollTop >= 70) {
+                header.classList.add("scroll-header");
+            } else {
+                header.classList.remove("scroll-header");
+            }
         }
-    }
+    
 
     function menuMobile() {
         let menuMob = document.querySelector(".menu-mobile");

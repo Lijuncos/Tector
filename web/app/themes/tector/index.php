@@ -9,7 +9,7 @@ get_header(); ?>
             while ( have_posts() ) : the_post();
                 ?>
                 <article <?php post_class(); ?>>
-                    <h1><?php the_title();?></h1>
+                    <!-- <h1><?php the_title();?></h1> -->
                     <!-- <header class="entry-header">
                         
                         <?php //the_title( '<h1 class="entry-title">', '</h1>' ); ?>
