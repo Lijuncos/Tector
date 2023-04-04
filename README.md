@@ -3,7 +3,8 @@
 Se utiliza docker
 Se utilizo el repositorio de bedrock (se puede visualizar en la parte inferior de este documento)
 Se debe instalar Wordpress y una vez instalado descargar e instalar el plugin "All-in-One WP Migration" para importar los plugins y configuraciones utilizadas en el proyecto.
-El archivo a importar se llama "configuraciones-wp.wpress" que se encuentra en el root del repositorio
+El archivo a importar se llama "configuraciones-wp.wpress" que se encuentra en https://drive.google.com/drive/folders/1C-7jng0YB6G93nflxgrUf3peK1GQJjdc?usp=share_link
+Cualquier inconveniente con la descarga del archivo enviar mail a lijuncos1@gmail.com
 
 ##Plugins utilizados:
 - All-in-One WP Migration
