@@ -24,5 +24,5 @@ web/.htaccess
 # WP-CLI
 wp-cli.local.yml
 
-web/app/ai1wm-backups
+web/app/ai1wm-backups/localhost-wp-20230404-183449-out1se.wpress
 web/app/ai1wm-backups/**/*
