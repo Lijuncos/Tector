@@ -32,7 +32,6 @@ function tector_enqueue () {
     
     //JAVASCRIPT
     wp_enqueue_script ('funciones', get_template_directory_uri (). '/js/functions.js');
-    wp_enqueue_script ('home', get_template_directory_uri (). '/js/home.js');
 }
 add_action ('wp_enqueue_scripts', 'tector_enqueue');
 

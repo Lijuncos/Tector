@@ -4,7 +4,7 @@
         <meta charset="<?php bloginfo( 'charset' ); ?>">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="profile" href="https://gmpg.org/xfn/11">
-        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
         <?php wp_head(); ?>
     </head>
     
@@ -15,10 +15,7 @@
                 <img src="<?php bloginfo('template_url');?>/img/logo-tector.png" alt="Holcim Tector">
             </div>
             <div class="navbar container">
-                <!-- <a class="logo" href="<?php// echo esc_url( home_url( '/' ) ); ?>">
-                    <img id="topL" src="<?php// echo get_stylesheet_directory_uri() ?>/img/KC_Principal_5.png"/>
-                    <?php //bloginfo( 'name' ); ?>
-                </a> -->
+                
                 <p class="site-description" style="display:none;"><?php bloginfo( 'description' ); ?></p>
                 
                 <?php wp_nav_menu( array('tector' => 'menu',) );?>

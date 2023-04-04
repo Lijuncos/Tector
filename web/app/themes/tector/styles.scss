@@ -3,7 +3,12 @@
 @import "scss/footer";
 @import "scss/home";
 @import "scss/404";
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;900&display=swap');
+@import "scss/tectorCompleto";
+@import "scss/tectorBeneficios";
+@import "scss/tectorProducts";
+@import "scss/contacto";
+@import "scss/maps";
+
 
 html {
     box-sizing: border-box;
@@ -17,7 +22,6 @@ body {
     padding-bottom: 460px;
     min-height: calc(100vh - 65px);
     position: relative;
-    // min-width: 440px;
 }
 @media screen and (min-width: 768px) {
     body {
@@ -27,19 +31,19 @@ body {
     }
 }
 h1,h2,h3,h4,p {
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'FordAntenna';
     font-weight: 400;
 }
 a {
     text-decoration: none;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'FordAntenna';
     font-weight: 400;
 }
 img {
     max-width: 100%;
 }
 input,textarea {
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'FordAntenna';
     color: $DUST_BLUE;
 }
 button, input[type="submit"], input[type="reset"] {
@@ -50,6 +54,7 @@ button, input[type="submit"], input[type="reset"] {
 	font: inherit;
 	cursor: pointer;
 	outline: inherit;
+    font-family: 'FordAntenna';
 }
 .banner {
     margin-top: 30px;

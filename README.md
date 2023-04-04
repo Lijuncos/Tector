@@ -1,3 +1,52 @@
+#Instalación:
+
+Se utiliza docker
+Se utilizo el repositorio de bedrock (se puede visualizar en la parte inferior de este documento)
+Se debe instalar Wordpress y una vez instalado descargar e instalar el plugin "All-in-One WP Migration" para importar los plugins y configuraciones utilizadas en el proyecto.
+El archivo a importar se llama "configuraciones-wp.wpress" que se encuentra en el root del repositorio
+
+##Plugins utilizados:
+- All-in-One WP Migration
+- Contact form 7
+- Meta pixel for WordPress
+- Font Awesome
+- Flamingo
+- Smart Slider 3
+- Yoast SEO
+
+- Contact Form CFDB7
+- WP Mail SMTP
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <p align="center">
   <a href="https://roots.io/bedrock/">
     <img alt="Bedrock" src="https://cdn.roots.io/app/uploads/logo-bedrock.svg" height="100">

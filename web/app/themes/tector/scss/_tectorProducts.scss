@@ -1,0 +1,100 @@
+.container-morteros,
+.container-adhesivos {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 60px;
+    @media screen and (min-width: 992px) {
+        padding-bottom: 100px;
+    }
+    h2 {
+        font-size: 36px;
+        font-weight: 700;
+        margin-bottom: 0;
+        @media screen and (min-width: 992px) {
+            padding: 0 0 20px 20px;
+            font-size: 60px;
+        }
+    }
+    span {
+        color: $ROJO;
+    }
+}
+
+.tector-morteros {
+    
+    @media screen and (min-width: 992px) {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    &-product {
+        position: relative;
+        padding-bottom: 50px;
+        button {
+            background-color: black;
+            color: white;
+            font-size: 20px;
+            font-weight: 700;
+            border-radius: 7px;
+            padding: 25px 40px;
+        }
+
+        &_description {
+            width: 80%;
+            margin: -90px auto 0;
+            text-align: center;
+        }
+        &_bg {
+            position: absolute;
+            background-color: $ROJO;
+            top: 0;
+            left: 5%;
+            right: 5%;
+            bottom: 40%;
+            z-index: -1;
+            border-radius: 15px;
+        }
+        &_bg2 {
+            position: absolute;
+            background-color: $AMARILLO;
+            top: 0;
+            left: 5%;
+            right: 5%;
+            bottom: 40%;
+            z-index: -1;
+            border-radius: 15px;
+        }
+        &_content {
+            width: 90%;
+            margin: 0 auto;
+            
+            h3 {
+                padding: 20px 30px 0;
+                font-size: 22px;
+                font-weight: 700;
+                margin-bottom: 0;
+                @media screen and (min-width: 992px) {
+                    padding: 0 30px;
+                    font-size: 28px;
+                    height: 70px;
+                }
+            }
+
+            p {
+                color: white;
+                padding-left: 30px;
+                font-size: 33px;
+                font-weight: 700;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+.container-adhesivos {
+    span {
+        color: $AMARILLO;
+    }
+    @media screen and (min-width: 992px) {
+        padding-bottom: 0px;
+    }
+}

@@ -1,0 +1,114 @@
+.tector-maps {
+    background-color: $GRIS;
+    padding: 100px 0;
+
+    h2 {
+        font-size: 40px;
+        color: $CELESTE;
+        text-align: center;
+        padding-bottom: 60px;
+        margin: 0;
+    }
+
+    &-content {
+        display: flex;
+        width: 80%;
+        margin: 0 auto;
+        justify-content: space-between;
+
+        @media screen and (max-width: 992px) {
+            flex-direction: column;
+            max-width: 95%;
+            margin: 0 auto;
+        }
+    }
+}
+
+.selects {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+    @media screen and (max-width: 992px) {
+        width: 100%;
+    }
+
+    
+
+    &-styles {
+        background-color: $CELESTE;
+        color: white;
+        border-radius: 50px;
+        border-style: none;
+        padding: 24px;
+        font-size: 25px;
+        margin-bottom: 30px;
+        width: 90%;
+        cursor: pointer;
+        border: 6px solid $CELESTE;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+
+        @media screen and (max-width: 992px) {
+            width: 100%;
+        }
+
+        &:hover {
+            border: 6px solid lighten($CELESTE, 10%);
+        }
+
+        &:focus {
+            outline: none;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+    }
+
+    &-button {
+        display: flex;
+        align-items: center;
+        padding: 40px 0 0 20px;
+
+        @media screen and (max-width: 992px) {
+            padding: 20px 0;
+        }
+
+        button {
+            border: 3px solid $CELESTE;
+            border-bottom-right-radius: 20px;
+            border-top-right-radius: 20px;
+            border-left: 0;
+            padding: 10px;
+            color: $CELESTE;
+            font-size: 25px;
+            @media screen and (max-width: 992px) {
+                width: 100%;
+                font-size: 18px;
+            }
+        }
+
+        .fa-location-dot {
+            font-size: 80px;
+            color: $CELESTE;
+        }
+    }
+}
+
+#localidad {
+    option:not(#default-option) {
+        display: none;
+    }   
+
+}
+#g-map {
+    height: 500px;
+    width: 700px;
+    border-radius: 30px;
+    border: 3px solid $CELESTE;
+    @media screen and (max-width: 992px) {
+        width: 100%;
+        margin: 0 auto;
+        height: 300px;
+    }
+}

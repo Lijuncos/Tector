@@ -1,0 +1,62 @@
+.contacto {
+    background-color: $CELESTE;
+    padding: 20px 0;
+    @media screen and (min-width: 992px) {
+        padding: 100px 0;
+    }
+    h2 {
+        color: white;
+        font-size: 22px;
+        font-weight: 700;
+        text-align: center;
+        @media screen and (min-width: 992px) {
+            font-size: 40px;
+        }
+    }
+
+    .wpcf7 {
+        text-align: center;
+
+        input[type],
+        textarea {
+            width: 90%;
+            border-radius: 15px;
+            padding: 15px 0 15px 20px;
+            background-color: $CELESTE;
+            border: 1.5px solid white;
+            color: black;
+            font-size: 18px;
+            @media screen and (min-width: 992px) {
+                padding: 25px 0 25px 30px;
+                font-size: 25px;
+            }
+        }
+
+        input[type="submit"] {
+            color: $CELESTE;
+            background-color: white;
+            font-size: 25px;
+            font-weight: 700;
+            padding-left: 0;
+
+            &:hover {
+                background-color: darken(white, 7%);
+            }
+        }
+
+        &-spinner {
+            display: none;
+        }
+
+        label {
+            color: #ffffff !important;
+            font-weight: bold;
+            }
+    }
+
+    .wpcf7-textarea::placeholder,
+    .wpcf7-text::placeholder {
+        color: white;
+    }
+
+}
