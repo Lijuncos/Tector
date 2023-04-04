@@ -23,3 +23,6 @@ web/.htaccess
 
 # WP-CLI
 wp-cli.local.yml
+
+web/app/ai1wm-backups
+web/app/ai1wm-backups/**/*
