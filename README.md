@@ -5,6 +5,12 @@ Se utilizo el repositorio de bedrock (se puede visualizar en la parte inferior d
 Se debe instalar Wordpress y una vez instalado descargar e instalar el plugin "All-in-One WP Migration" para importar los plugins y configuraciones utilizadas en el proyecto.
 El archivo a importar se llama "configuraciones-wp.wpress" que se encuentra en https://drive.google.com/drive/folders/1C-7jng0YB6G93nflxgrUf3peK1GQJjdc?usp=share_link
 Cualquier inconveniente con la descarga del archivo enviar mail a lijuncos1@gmail.com
+Para evitar el límite de subida de archivo y poder importar las configuraciones de wordpress insertar el siguiente código dentro de web/.htaccess
+php_value upload_max_filesize 1280M
+php_value post_max_size 1280M
+php_value memory_limit 1280M
+php_value max_execution_time 1280M
+php_value max_input_time 1280M
 
 ##Plugins utilizados:
 - All-in-One WP Migration
